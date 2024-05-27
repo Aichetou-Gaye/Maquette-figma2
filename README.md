@@ -1,9 +1,9 @@
 # Site Web Responsive
 
 Suite au top consistant à reproduire une maquette via une vidéo, il nous est actuellement demandé :
-    - Rendre la maquette responsive sur Figma;
-    - Intégrer avec HTML/CSS;
-    - Enfin rendre le site web responsive.
+- Rendre la maquette responsive sur Figma;
+- Intégrer avec HTML/CSS;
+- Enfin rendre le site web responsive.
 
 ## Table de matières
 

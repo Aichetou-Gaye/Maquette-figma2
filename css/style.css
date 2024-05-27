@@ -1,0 +1,213 @@
+:root {
+    --bulle : #1761a7;
+    --pink : #bc3a7f;
+    --body : #2F303A;
+    --button : #1762A7;
+    --fun : #BC3A80;
+    --black : #1E1E1E;
+    --white : #FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    width:100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body);
+    width: 60%;
+    margin:50px;
+    height: 70vh;
+    padding: 25px;
+    position: relative;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 95%;
+    place-content: center;
+}
+header > a {
+    width: 70%;
+}
+header a img {
+    width: 150px;
+}
+header nav {
+    justify-content: END;
+}
+header nav ul{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 15px;
+}
+.landing {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.landing .girl {
+    width: 50%;
+    position: relative;
+}
+.landing .girl img {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 5%;
+    top: -4%;
+}
+.contain-right {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    width: 45%;
+}
+.contain-right h1 {
+    margin: 30px 0px;
+    font-size: 30px;
+}
+.contain-right h4 {
+    margin: 30px 0px;
+}
+.contain-right a button {
+    background-color: var(--button);
+    width: 200px;
+    height: 40PX;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: var(--white);
+    border-radius: 10px;
+}
+.feature {
+    display: flex;
+    width: 90%;
+}
+.feature .feat-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: var(--white);
+}
+.feat-left h1 {
+    margin: 30px 0px;
+    font-size: 30px;
+}
+.feature .icones{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.icones div {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 80px;
+    gap: 10px;
+}
+.icones div img {
+    width: 40px;
+    height: 40px;
+}
+.feat-left > p {
+    margin-top: 50px;
+}
+.feat-right {
+    width: 50%;
+    position: relative;
+}
+.feat-right img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: -70px;
+    bottom: -100PX;
+}
+.sign {
+    display: flex;
+    width: 100%;
+}
+.sign .join {
+    width: 50%;
+    font-size: 60px;
+    place-self: center;
+    color: var(--white);
+}
+.join span {
+    color: var(--fun);
+}
+.sign .form-left {
+    width: 40%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 50vh ;
+}
+.sign .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+    color: var(--white);
+    width: 80%;
+}
+.form input {
+    background:none;
+    border: 1px solid var(--button);
+    border-radius: 10px;
+    height: 30px;
+}
+.form button {
+    background-color: var(--button);
+    height:30PX;
+    border: none;
+    font-size: 17px;
+    color: var(--white);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    width: 94%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 20px;
+    color: var(--white);
+    padding: 10PX 25Px;
+}
+footer .foot-left {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+footer .foot-right {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.foot-right div {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
