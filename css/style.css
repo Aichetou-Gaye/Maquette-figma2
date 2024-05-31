@@ -83,11 +83,10 @@ header nav ul li a{
 .contain-right h4 {
     margin: 30px 0px;
 }
-.contain-right a button {
+.contain-right button {
     background-color: var(--button);
     width: 200px;
     height: 40PX;
-    outline: none;
     border: none;
     font-size: 20px;
     color: var(--white);
