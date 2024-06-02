@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --bulle : #1761a7;
     --pink : #bc3a7f;
@@ -21,21 +23,23 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--body);
-    width: 60%;
-    margin:50px;
-    height: 70vh;
+    width: 80%;
+    height: 90vh;
     padding: 25px;
+    margin: 5px;
     position: relative;
+    font-family: 'Poppins', sans-serif;
+    z-index: -1;
 }
 header {
     display: flex;
     justify-content: space-between;
     height: 80px;
-    width: 95%;
-    place-content: center;
+    width: 80%;
+    margin: 0px 80px;
 }
 header > a {
-    width: 70%;
+    width: 40%;
 }
 header a img {
     width: 150px;
@@ -52,7 +56,7 @@ header nav ul{
 header nav ul li a{
     text-decoration: none;
     color: var(--white);
-    font-size: 15px;
+    font-size: 17px;
 }
 .landing {
     display: flex;
@@ -64,52 +68,98 @@ header nav ul li a{
     position: relative;
 }
 .landing .girl img {
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 481px;
     position: absolute;
-    left: 5%;
-    top: -4%;
+    left: 13%;
+    top: 14%;
+    z-index: 2;
 }
 .contain-right {
     display: flex;
     flex-direction: column;
     color: var(--white);
-    width: 45%;
+    width: 50%;
+    margin-top: 60px;
 }
-.contain-right h1 {
-    margin: 30px 0px;
-    font-size: 30px;
+.contain-right h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 15px 0px;
 }
 .contain-right h4 {
-    margin: 30px 0px;
+    font-size: 20px;
+    font-weight: normal;
 }
 .contain-right button {
+    margin-top: 15px;
     background-color: var(--button);
-    width: 200px;
-    height: 40PX;
+    width: 150px;
+    height: 60PX;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--white);
     border-radius: 10px;
+    font-family: 'Poppins';
+}
+.cercle {
+    position: absolute;
+    content: "";
+    background-color: var(--pink);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    opacity: 10%;
+    z-index: 0;
+    top: 60%;
+}
+.cercle-two {
+    position: absolute;
+    content: "";
+    background-color: var(--bulle);
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    opacity: 10%;
+    z-index: 0;
+    top: 10%;
+    left: 33%;
+}
+.cercle-end {
+    position: absolute;
+    content: "";
+    background-color: var(--bulle);
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    opacity: 10%;
+    z-index: 0;
+    top: 55%;
+    left: 75%;
+    box-shadow: 0px 0px 3px 4px var(--bulle);
 }
 .feature {
     display: flex;
-    width: 90%;
+    width: 80%;
+    justify-content: space-between;
+    margin: 40px 80px;
 }
 .feature .feat-left {
     display: flex;
     flex-direction: column;
     width: 50%;
     color: var(--white);
+    margin-top: 20px;
 }
 .feat-left h1 {
-    margin: 30px 0px;
-    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: normal;
+    font-size: 40px;
 }
 .feature .icones{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 63%;
 }
 .icones div {
     background-color: var(--black);
@@ -117,9 +167,9 @@ header nav ul li a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90px;
-    height: 80px;
-    gap: 10px;
+    width: 75px;
+    height: 90px;
+    gap: 20px;
 }
 .icones div img {
     width: 40px;
@@ -127,86 +177,105 @@ header nav ul li a{
 }
 .feat-left > p {
     margin-top: 50px;
+    font-size: 20px;
 }
 .feat-right {
     width: 50%;
     position: relative;
 }
 .feat-right img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     position: absolute;
-    right: -70px;
-    bottom: -100PX;
+    right: 10px;
+    top: 35PX;
 }
 .sign {
     display: flex;
     width: 100%;
+    margin: 0px 80px;
+    align-items: center;
 }
 .sign .join {
-    width: 50%;
-    font-size: 60px;
-    place-self: center;
+    width: 40%;
+    font-size: 40px;
     color: var(--white);
+    font-weight: 700;
 }
 .join span {
     color: var(--fun);
+    font-size: 60px;
+    font-weight: 800;
 }
-.sign .form-left {
+.sign .form-right {
     width: 40%;
-    background-color: var(--black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    height: 50vh ;
 }
 .sign .form {
     display: flex;
     flex-direction: column;
-    gap: 10PX;
+    background-color: var(--black);
     color: var(--white);
-    width: 80%;
+    width: 90%;
+    height: 59vh;
+    padding: 30px 60px;
+    border-radius: 20px;
+}
+.form label {
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 .form input {
     background:none;
     border: 1px solid var(--button);
-    border-radius: 10px;
-    height: 30px;
+    border-radius: 7px;
+    height: 35px;
+    margin-bottom: 40px;
 }
 .form button {
     background-color: var(--button);
-    height:30PX;
+    height:60PX;
     border: none;
-    font-size: 17px;
+    font-size: 14px;
     color: var(--white);
-    border-radius: 10px;
-    margin-top: 20px;
+    border-radius: 7px;
+    font-family: 'Poppins';
 }
 footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--black);
-    width: 94%;
+    width: 100%;
     left: 0;
     bottom: 0;
     position: absolute;
-    height: 20px;
+    height: 40px;
     color: var(--white);
-    padding: 10PX 25Px;
 }
 footer .foot-left {
     display: flex;
     justify-content: space-between;
-    width: 20%;
+    width: 13%;
+    margin-left: 80px;
+    font-size: 13px;
+    font-weight: 700;
 }
 footer .foot-right {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 20%;
+    margin-right: 80px;
 }
 .foot-right div {
     display: flex;
-    justify-content: space-between;
+    gap: 5PX;
     width: 35%;
+    font-size: 13px;
+    font-weight: 700;
+}
+.foot-right div img{
+    width: 20px;
+}
+.toggle_menu {
+    display: none;
 }
